@@ -1,2 +1,2 @@
-# Portfolio
-My portfolio website
+# Portfolio Krzysztof Bogusz
+
