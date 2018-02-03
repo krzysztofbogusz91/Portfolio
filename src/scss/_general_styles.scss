@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+section:nth-of-type(odd){
+  color:$color-text-bright;
+  background-color: $color-main;
+}
+
+section:nth-of-type(even){
+  color: $color-text-bright;
+  background-color: $color-add-on;
+}
+
+footer{
+  color:$color-text-bright;
+  background-color: $color-main;
+}
+
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-gallery img{
+  width: 100px;
+  height: 100px;
+}

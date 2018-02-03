@@ -1,0 +1,50 @@
+.hero{
+
+}
+.hero-img{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/skybig.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  //flex
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-img:before{
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color-add-on, 0.7);
+  top:0;
+  left:0;
+
+}
+.hero-text{
+  z-index: 2;
+  display: block;
+  //center (-nav decenter text-)
+  padding-bottom: 170px;
+  font-size: 35px;
+  opacity: 0;
+  animation: show 4s forwards 1;
+}
+
+.hero-text span{
+  animation: mig 1.2s infinite;
+}
+@keyframes mig {
+  0%{opacity: 0.1}
+  100%{opacity: 1}
+}
+@keyframes show {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}

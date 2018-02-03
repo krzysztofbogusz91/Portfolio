@@ -1,0 +1,42 @@
+.nav-bar{
+  background: $color-add-on;
+}
+
+.nav-bar-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+}
+
+.logo{
+  flex-grow: 1;
+  opacity: 0;
+  animation: show 2s forwards 1;
+
+}
+
+.logo-text{
+  color: $color-text-bright;
+  font-weight: 500;
+  font-family: $fonts;
+  font-size: 32px;
+  display: block;
+
+}
+.nav-bar-ul{
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.nav-bar-ul > li > a{
+  color: $color-text-bright;
+  font-family: $fonts;
+  margin-right:40px;
+  font-size: 22px;
+  font-weight: 400;
+  opacity: 0;
+  animation: show 4s forwards 1;
+}

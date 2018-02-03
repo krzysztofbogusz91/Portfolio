@@ -1,19 +1,4 @@
 @import "_var";
-*{
-  margin: 0;
-  padding: 0;
-}
-
-img{
-  width: 100%;
-}
-
-.container{
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.about-gallery img{
-  width: 100px;
-  height: 100px;
-}
+@import "_general_styles";
+@import "_nav_bar";
+@import '_hero'
