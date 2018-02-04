@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a{
@@ -9,6 +10,22 @@ a{
 li{
   list-style: none;
 }
+
+body{
+  font-family: $fonts;
+  font-size: 18px;
+}
+
+h2{
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h3{
+  font-size: 28px;
+  font-weight: 400;
+}
+
 section:nth-of-type(odd){
   color:$color-text-bright;
   background-color: $color-main;

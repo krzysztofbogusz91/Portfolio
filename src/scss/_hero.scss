@@ -22,12 +22,13 @@
   z-index: 1;
   width: 100%;
   height: 100%;
-  background-color: rgba($color-add-on, 0.7);
+  background: linear-gradient(to bottom, rgba($color-add-on, 0.7), rgba($color-add-on, 0.8), rgba($color-add-on, 0.9), rgba($color-add-on, 1) );
   top:0;
   left:0;
 
 }
 .hero-text{
+
   z-index: 2;
   display: block;
   //center (-nav decenter text-)

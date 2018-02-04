@@ -1,5 +1,6 @@
 .nav-bar{
-  background: $color-add-on;
+  background: rgba($color-add-on, 0.9);
+
 }
 
 .nav-bar-nav{
@@ -7,7 +8,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 70px;
+  height: 50px;
 }
 
 .logo{

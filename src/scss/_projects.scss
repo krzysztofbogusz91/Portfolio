@@ -1,0 +1,123 @@
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.projects-head {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.projects-showcase {
+width: 3000%;
+
+
+}
+
+.slider-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.arrow{
+  margin: 10px;
+  height: 20px;
+  width: 20px;
+  border: 2px solid $color-secondary;
+  background-color: $color-main;
+  border-radius: 50%;
+  list-style: none;
+  cursor: pointer;
+}
+
+.arrow.active{
+  background-color: $color-text-dark;
+
+}
+
+
+.projects-showcase-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.slide {
+
+  height: 400px;
+  width: 800px;
+  margin: 25px;
+  padding: 100px 20px 20px 20px;
+  border: 2px solid rgba($color-secondary,0.5);
+  border-radius: 10px;
+  //display: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-image: url("../images/BANGKOKBW2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 1px 5px 16px rgba($color-add-on,0.6);
+}
+
+.side-description-background {
+  width: 400px;
+  background-color: rgba($color-secondary,0.8);
+  padding: 10px;
+  border-radius: 5px;
+  color: $color-add-on;
+}
+
+.slider-h3 {
+  text-align: center;
+  margin: 25px auto;
+}
+
+.slide > p {
+
+  display: block;
+}
+
+.slide-btn {
+  display: block;
+  margin: 20px 60px;
+  padding: 10px 0;
+  text-align: center;
+  color: $color-text-bright;
+  background-color: $color-add-on;
+  border-radius: 5px;
+  text-transform: uppercase;
+
+}
+.slide-btn:hover{
+  box-shadow: 1px 5px 16px rgba($color-add-on,0.6);
+}
+
+.projects-other {
+  margin-top: 50px;
+}
+
+.other-box {
+}
+
+.box-title {
+}
+
+.box-text {
+}
+
+.box-btn {
+  color: $color-text-dark;
+}
+
+.projects-info{}
+.projects-info-text{}
+.projects-info-button>.btn{
+  color: $color-text-dark;
+}
