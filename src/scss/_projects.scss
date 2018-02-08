@@ -7,14 +7,14 @@
 }
 
 .projects-head {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   //for other projects
   text-align: center;
 }
 
 .projects-showcase {
-  width: 3000%;
+  width: 100%;
 }
 
 .slider-nav{
@@ -50,20 +50,25 @@
 
 .slide {
 
-  height: 400px;
+  //show
+  display: none;
+
+  height: 480px;
   width: 800px;
   margin: 25px;
-  padding: 100px 20px 20px 20px;
+  padding: 0 20px 20px 0;
   border: 2px solid rgba($color-secondary,0.5);
   border-radius: 10px;
-  //display: none;
-  display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   background-image: url("../images/BANGKOKBW2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 1px 5px 16px rgba($color-add-on,0.6);
+}
+
+.slide.show{
+  display: flex;
 }
 
 .side-description-background {

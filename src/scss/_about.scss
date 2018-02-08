@@ -17,8 +17,8 @@
 
 .about-text-head{
   text-align: center;
-  margin-top:18px;
-  margin-bottom: 25px;
+  margin-top:40px;
+  margin-bottom: 60px;
 }
 
 .about-text-text{
@@ -33,30 +33,32 @@
 }
 
 .about-img{
-  width: 140px;
+  //margin: 10px 10px;
+  width: 160px;
   display: block;
   padding: 5px;
-  background-color: rgba($color-text-bright, 0.3);
+  background-color: rgba($color-text-bright, 0.4);
   border: 2px solid rgba($color-text-bright, 0.5);
-  border-radius: 20px;
+  border-radius: 16px;
 
 }
 
 .about-text-text-div{
-  align-self: flex-end;
-  margin-bottom: 10px;
+  align-self: center;
   padding: 20px;
 
 }
 
 .about-gallery-head{
   text-align: center;
-  margin-top: 30px;
+  margin: 60px 0 60px 0;
 }
 .about-gallery{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+
+
 }
 .about-gallery-gallery{
   display: flex;
@@ -64,11 +66,19 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 0 10%;
+  background-color: rgba($color-text-bright, 0.4);
+  border: 2px solid rgba($color-text-bright, 0.5);
+  border-radius: 16px;
 
 }
 .about-gallery-gallery >li {
-  margin: 20px;
+  width: 15%;
+  margin: 10px 20px;
+
 }
-.about-gallery-gallery >li> img {}
+.about-gallery-gallery >li> img {
+    transform: scale(0.7);
+}

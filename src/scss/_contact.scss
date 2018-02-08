@@ -25,6 +25,8 @@
 .contact-form {
   text-align: center;
   margin-bottom: 50px;
+
+
 }
 
 .contact-form-form {
@@ -38,13 +40,18 @@
 }
 
 .contact-form-form > input {
+  padding-left: 5px;
+  line-height: 25px;
   font-size: 18px;
   width: 80%;
   font-family: $fonts;
+  color: rgba($color-text-dark,0.9);
 
 }
 
 .contact-form-form > textarea {
+  color: rgba($color-text-dark,0.9);
+  padding: 5px;
   font-size: 18px;
   width: 80%;
   resize: none;
@@ -63,6 +70,7 @@
 .media-list {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
   margin-bottom: 25px;
 }
 

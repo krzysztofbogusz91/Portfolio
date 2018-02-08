@@ -1,27 +1,30 @@
 .foot-flex{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 100px;
 }
 .row-foot{
-  justify-self: center;
-  flex-grow: 1;
+  width: 60%;
 }
 .row-foot-2{
-  flex-grow: 2;
 }
 .site-map{
-
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.site-map > li{
+  margin: 0 20px;
 }
 .site-map> li > a{
-  display: block;
-  color: $color-text-dark;
+  color: rgba($color-text-dark,0.4);
+}
 
+.site-map> li > a:hover{
+  color: rgba($color-text-dark,0.9);
+}
 
-  text-align: center;
+.footer-text{
 }
