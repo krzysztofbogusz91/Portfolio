@@ -1,0 +1,14 @@
+.projects-container{
+  position: relative;
+}
+
+.projects .poly{
+  position: absolute;
+  background-color:$color-add-on;
+  width:100%;
+  height: 400px;
+  -webkit-clip-path: polygon(100% 0, 0 0, 50% 26%);
+  clip-path: polygon(100% 0, 0 0, 50% 26%);
+}
+
+
