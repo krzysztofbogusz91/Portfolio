@@ -8,6 +8,13 @@
 .contact-head {
   padding-top: 50px;
   text-align: center;
+  position: relative;
+}
+
+.contact-head:after{
+  @include underLine;
+  top:95px;
+  width: 180px;
 }
 
 .contact-container {

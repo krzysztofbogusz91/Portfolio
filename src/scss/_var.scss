@@ -6,3 +6,14 @@ $color-text-bright:#dae9f4;
 $color-text-dark:#274c5e;
 
 $fonts:'Roboto', Arial, sans-serif;
+
+@mixin underLine{
+  content: "";
+  display: block;
+  height: 2px;
+  top:40px;
+  left:50%;
+  transform: translate(-50%);
+  position: absolute;
+  background-color: $color-text-bright;
+}
