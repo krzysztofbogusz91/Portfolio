@@ -25,9 +25,11 @@
 .about-text-head:after{
   content: "";
   display: block;
-  width:100%;
+  width:180px;
   height: 2px;
-  top:-20px;
+  top:50px;
+  left:50%;
+  transform: translate(-50%);
   position: absolute;
   background-color: $color-text-bright;
 }
@@ -69,7 +71,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-
+  width: 100%;
 
 }
 .about-gallery-gallery{
@@ -79,7 +81,7 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   padding: 0 10%;
   background-color: rgba($color-text-bright, 0.4);
   border: 2px solid rgba($color-text-bright, 0.5);
