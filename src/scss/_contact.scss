@@ -9,16 +9,18 @@
   padding-top: 50px;
   text-align: center;
   position: relative;
+  color: $color-secondary;
 }
 
 .contact-head:after{
   @include underLine;
   top:95px;
   width: 180px;
+  background-color: $color-secondary;
 }
 
 .contact-container {
-  margin-top: 50px;
+  margin-top: 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -32,7 +34,7 @@
 
 .contact-form {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 
 
 }

@@ -28,12 +28,11 @@
 
 }
 .hero-text{
-
   z-index: 2;
   display: block;
   //center (-nav decenter text-)
   padding-bottom: 170px;
-  font-size: 35px;
+  font-size: 45px;
   opacity: 0;
   animation: show 4s forwards 1;
 }
@@ -47,5 +46,5 @@
 }
 @keyframes show {
   0%{opacity: 0}
-  100%{opacity: 1}
+  100%{opacity: 0.9}
 }
