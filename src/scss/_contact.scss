@@ -44,7 +44,7 @@
 }
 
 .contact-form-form > label {
-  font-size: 18px;
+  font-size: 25px;
 
 
 }
@@ -52,20 +52,35 @@
 .contact-form-form > input {
   padding-left: 5px;
   line-height: 25px;
-  font-size: 18px;
-  width: 80%;
+  height: 35px;
+  font-size: 20px;
+  width: 90%;
   font-family: $fonts;
   color: rgba($color-text-dark,0.9);
+  margin: 5px 0;
+  border-radius: 5px;
 
 }
 
+
 .contact-form-form > textarea {
+  margin: 5px 0;
   color: rgba($color-text-dark,0.9);
   padding: 5px;
-  font-size: 18px;
-  width: 80%;
+  font-size: 20px;
+  width: 90%;
   resize: none;
   font-family: $fonts;
+  border-radius: 5px;
+}
+
+.contact-form-form>input:focus{
+  box-shadow: 1px 1px 10px rgba($color-text-bright, 0.8);
+  color: rgba($color-text-dark,1);
+}
+.contact-form-form > textarea:focus{
+  box-shadow: 1px 1px 10px rgba($color-text-bright, 0.8);
+  color: rgba($color-text-dark,1);
 }
 
 //media

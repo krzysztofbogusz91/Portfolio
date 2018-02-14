@@ -12,18 +12,21 @@
 }
 .site-map{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
+  margin-left: 50px;
 }
 .site-map > li{
   margin: 0 20px;
 }
 .site-map> li > a{
-  color: rgba($color-text-dark,0.4);
+  color: rgba($color-text-bright,0.8);
+  font-size: 16px;
 }
 
 .site-map> li > a:hover{
-  color: rgba($color-text-dark,0.9);
+  color: rgba($color-text-bright,0.4);
+  border-bottom: 1px solid rgba($color-text-bright,0.4);
 }
 
 .footer-text{
