@@ -49,3 +49,55 @@
   border-bottom: 1px solid $color-secondary;
 
 }
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+  .nav-bar-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    position: relative;
+  }
+
+  .logo{
+    display: none;
+  }
+
+
+  .nav-bar-ul{
+
+    width: 300px;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color:rgba($color-add-on, 0.9);
+    z-index: 2;
+    flex-direction: column;
+
+  }
+
+  .hidden-nav{
+    left: -20%;
+  }
+
+  .nav-bar-ul > li{
+    margin: 10px 0 10px;
+    &>a{
+      margin-right: 0;
+    }
+  }
+
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) { }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {  }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) { }
