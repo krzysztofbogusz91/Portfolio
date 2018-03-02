@@ -75,14 +75,16 @@
                         <div class="projects-showcase-flex">
 
                             <div>
-                                <span class="arrow arrow-left"></span>
+                                <span id="arrow-left" class="arrow arrow-left"></span>
                             </div>
 
                             <div class="projects-showcase-slider-div">
-                                <ul class="projects-showcase-slider">
+                                <ul
+ id="projects-gallery"                                       class="projects-showcase-slider">
                                     <li class="slide show">
                                         <div class="slide-img-div">
-                                            <img class="slide-img" src="http://via.placeholder.com/640x427" alt="bankok"/>
+                                            <img class="slide-img" src="images/projects/sit_on_chair.jpg"
+                                            alt="sit_on_chair_project"/>
                                         </div>
                                         <div class="side-description-background">
                                             <h3 class="slider-h3 ">Sit On Chair</h3>
@@ -90,36 +92,33 @@
                                             <a href="https://krzysztofbogusz91.github.io/SitOnChair/" class="btn slide-btn" target="_blank">Check Out</a>
                                         </div>
                                     </li>
+
                                     <li class="slide">
+                                        <div class="slide-img-div">
+                                            <img class="slide-img" src="images/projects/recipe_app.jpg"
+                                                 alt="recipe_app_project"/>
+                                        </div>
                                         <div class="side-description-background">
-                                            <h3 class="slider-h3">Weather App</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid assumenda blanditiis cum dolor eveniet explicabo fugiat, ipsa itaque laborum nam non, odit omnis quaerat quia quibusdam quo quod repellat rerum soluta ullam voluptate voluptatem.</p>
-                                            <a href="https://krzysztofbogusz91.github.io/WeatherAppJs/" class="btn slide-btn" target="_blank">Check Out</a>
+                                            <h3 class="slider-h3 ">Recipe App</h3>
+                                            <p class="slide-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci architecto atque aut beatae consectetur consequuntur dicta dolore eligendi error excepturi expedita facilis fugiat harum ipsa ipsam modi non perspiciatis quaerat quasi sed sint vel?</p>
+                                            <a href="https://krzysztofbogusz91.github.io/RecipeApp/#/" class="btn slide-btn" target="_blank">Check Out</a>
                                         </div>
                                     </li>
-                                    <li class="slide">
-                                                                            <div class="side-description-background">
-                                            <h3 class="slider-h3">Tic Tac Toe</h3>
-                                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis esse illum incidunt ipsam officia porro, praesentium quae! Asperiores assumenda atque autem consectetur quam quas quia reprehenderit suscipit tempore voluptatem! Autem dolorem doloribus ducimus unde!</p>
-                                            <a href="https://krzysztofbogusz91.github.io/Tic-Tac-Toe-Game-JavaScript/" class="btn slide-btn" target="_blank">Check Out</a>
-                                        </div>
-                                    </li>
+
                                 </ul>
 
 
                             </div>
                             <div>
-                                <span class="arrow arrow-right"></span>
+                                <span id="arrow-right" class="arrow arrow-right"></span>
                             </div>
                         </div>
 
-                        <div class="slider-nav">
-                            <span class="circ"></span>
-                            <span class="circ"></span>
+                        <div class="slider-nav" id="circles">
+
                             <span class="circ active"></span>
                             <span class="circ"></span>
-                            <span class="circ"></span>
-                            <span class="circ"></span>
+
                         </div>
 
                     </article>
@@ -203,5 +202,6 @@
         </footer>
 
 </main>
+<script src="js/index.js"></script>
 </body>
 </html>
