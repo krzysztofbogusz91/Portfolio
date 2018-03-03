@@ -123,3 +123,32 @@
 .form-btn:hover{
   box-shadow: 1px 5px 16px rgba($color-main, 0.6);
 }
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+
+  .contact-container{
+    flex-direction: column;
+  }
+
+  .contact-form{
+    width: 100%;
+  }
+  .contact-media{
+    width: 100%;
+  }
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
+}

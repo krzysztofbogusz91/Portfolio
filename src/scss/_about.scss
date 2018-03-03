@@ -1,4 +1,4 @@
-.about-container{
+.about-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -6,32 +6,32 @@
 
 }
 
-.about-text{
+.about-text {
 
 }
 
-.about-text-flex{
+.about-text-flex {
   display: flex;
   flex-direction: column;
   background: #4d537a;
 
 }
 
-.about-text-head{
+.about-text-head {
   text-align: center;
-  margin-top:80px;
+  margin-top: 80px;
   margin-bottom: 100px;
   position: relative;
 
 }
-.about-text-head:after{
+
+.about-text-head:after {
   @include underLine;
-  width:180px;
+  width: 180px;
 
 }
 
-
-.about-text-text{
+.about-text-text {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -41,7 +41,7 @@
 
 }
 
-.about-img{
+.about-img {
   margin: 10px;
   width: 160px;
   display: block;
@@ -52,23 +52,21 @@
 
 }
 
-
-
-.about-text-text-div{
+.about-text-text-div {
   align-self: center;
   padding: 20px;
 
 }
 
-.about-gallery{
+.about-gallery {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   width: 100%;
 
-
 }
-.about-gallery-gallery{
+
+.about-gallery-gallery {
   //mt space between techno i about
   margin-top: 80px;
   display: flex;
@@ -84,19 +82,19 @@
   border-radius: 16px;
 
 }
-.about-gallery-gallery >li {
+
+.about-gallery-gallery > li {
 
   margin: 10px 40px;
 
 }
 
-
-.about-gallery-gallery >li> img {
-    transform: scale(0.7);
-    margin: 0 auto;
+.about-gallery-gallery > li > img {
+  transform: scale(0.7);
+  margin: 0 auto;
 }
 
-.about-gallery-img-description{
+.about-gallery-img-description {
   display: block;
   font-size: 16px;
   //add brither or change to darker
@@ -108,4 +106,61 @@
   border: 2px solid rgba($color-text-bright, 0.3);
   border-radius: 5px;
 
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+
+  .about-img{
+    display: none;
+  }
+
+  .about-gallery-gallery {
+    //mt space between techno i about
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 180px;
+    padding: 10px;
+    background-color: rgba($color-text-bright, 0.4);
+    border: 2px solid rgba($color-text-bright, 0.5);
+    border-radius: 16px;
+
+  }
+
+  .about-gallery-gallery > li {
+    margin: 0px 10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-gallery-gallery > li > img {
+    transform: scale(0.6);
+    display: block;
+  }
+
+  .about-gallery-img-description {
+    display: none;
+
+  }
+
+
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
 }
