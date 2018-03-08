@@ -79,7 +79,7 @@
   color: rgba($color-text-dark,1);
 }
 .contact-form-form > textarea:focus{
-  box-shadow: 1px 1px 10px rgba($color-text-bright, 0.8);
+ box-shadow: 1px 1px 10px rgba($color-text-bright, 0.8);
   color: rgba($color-text-dark,1);
 }
 
@@ -128,6 +128,7 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
 
+
   .contact-container{
     flex-direction: column;
   }
@@ -143,10 +144,39 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767px) {
+
+  .contact-head{
+    padding-top: 25px;
+  }
+
+  .contact-head::after{
+    top:65px
+  }
+
+  .contact-container{
+    flex-direction: column;
+  }
+
+  .contact-form{
+    width: 100%;
+  }
+  .contact-media{
+    width: 100%;
+  }
+
 }
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991px) {
+
+  .contact-head{
+    padding-top: 35px;
+  }
+
+  .contact-head::after{
+    top:75px
+  }
+
 }
 
 // Large devices (desktops, less than 1200px)
