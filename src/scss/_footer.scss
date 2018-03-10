@@ -8,8 +8,7 @@
 .row-foot{
   width: 60%;
 }
-.row-foot-2{
-}
+
 .site-map{
   display: flex;
   flex-direction: column;
@@ -29,12 +28,20 @@
   border-bottom: 1px solid rgba($color-text-bright,0.4);
 }
 
-.footer-text{
-}
+
 
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
+  .site-map{
+    margin: 0;
+  }
+
+  .footer-text{
+    margin: 0;
+    text-align: right;
+  }
+
 }
 
 // Small devices (landscape phones, less than 768px)
