@@ -2,7 +2,7 @@
 
 *HTML5, SASS, Vanilla JS*
 
-My portfolio documenting skills I learnd over time, and projects I'v finished.
+Portfolio documenting the skills I learned over time and the projects I finished.
 
 It is still work in progress. 
 
