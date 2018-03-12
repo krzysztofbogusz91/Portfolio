@@ -8,15 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const menu = document.getElementById('menu')
     const gallery = projectsGallery.children;
     //FORM VALID
-    const formSend = document.getElementById('form-send');
+    const formSend = document.getElementById('form-btn');
 
     //FORM VALIDATION
-    // formSend.addEventListener('click', function () {
-    //    // e.preventDefault();
-    //     console.log('daf');
-    //
-    //     alert('form is disabled');
-    // });
+    formSend.addEventListener('click', function (e) {
+        e.preventDefault();
+
+
+        alert('form is disabled');
+    });
 
     //MOBILE NAV
     mobileNav.addEventListener('click', function () {

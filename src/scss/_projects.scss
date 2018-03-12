@@ -251,10 +251,64 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767px) {
+
+
+  .arrow{
+    display: none;
+  }
+
+  .slide{
+    display: block;
+    width: 100%;
+  }
+
+  .slide.show {
+    display: block;
+  }
+
+  .slide-img-div{
+    padding: 8px;
+  }
+
+  .slide-img{
+    border-radius: 10px;
+  }
+
+  .side-description-background{
+    position: static;
+    width: 95%;
+    display: block;
+    bottom: 0;
+    right: 0;
+    background-color: rgba($color-secondary, 0.8);
+
+    border-radius: 5px;
+    color: $color-add-on;
+
+    padding: 20px;
+    margin: 10px auto;
+  }
+
+  .circ{
+    display: none;
+  }
+
+
+
 }
 
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991px) {
+@media (min-width:767px) and (max-width: 991px) {
+
+
+  .side-description-background {
+    width: 80%;
+
+  }
+  .slider-h3{
+    margin: 8px;
+  }
+
 }
 
 // Large devices (desktops, less than 1200px)
