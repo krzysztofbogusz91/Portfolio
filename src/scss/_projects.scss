@@ -133,7 +133,7 @@
 .side-description-background {
   display: block;
   position: absolute;
-  width: 40%;
+  width: 44%;
   bottom: 10%;
   right: 5%;
   background-color: rgba($color-secondary, 0.8);
@@ -144,15 +144,26 @@
 
 .slider-h3 {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
-  margin: 25px auto;
+  margin: 0 auto 10px auto;
 }
 
 .slide-desc {
   font-size: 14px;
   display: block;
+  font-style: italic;
 }
+
+.slide-desc-list{
+  font-size: 14px;
+  margin-top: 10px;
+}
+.slide-desc-list-item{
+  text-indent: 5px;
+  margin: 5px auto;
+}
+
 
 .slide-btn {
   font-size: 15px;
@@ -303,10 +314,10 @@
 
   .side-description-background {
     width: 80%;
-
+    padding-bottom: 0;
   }
-  .slider-h3{
-    margin: 8px;
+  .slide-btn{
+    margin: 10px auto;
   }
 
 }
