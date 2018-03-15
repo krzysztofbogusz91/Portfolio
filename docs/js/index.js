@@ -7,10 +7,32 @@ document.addEventListener("DOMContentLoaded", function () {
     const mobileNav = document.getElementById('mobile-nav');
     const menu = document.getElementById('menu')
     const gallery = projectsGallery.children;
-    //FORM VALID
+    //FORM VALIDATION
+    const form = document.getElementById('form')
+    const name = document.getElementById('user');
+    const email = document.getElementById('email');
+    const message = document.getElementById('message');
     const formSend = document.getElementById('form-btn');
 
     //FORM VALIDATION
+
+    //check if name is longer than 3 letters
+    let comunicate = false;
+    name.addEventListener('change', function () {
+        if (this.value.length < 3) {
+            const div = document.createElement('div');
+            div.innerText = "Name to short!";
+            div.classList.add('comunicate');
+            comunicate = true;
+            form.appendChild(div);
+        }
+        if (comunicate && (this.value.length > 3)) {
+            comunicate = false;
+            document.querySelector('.comunicate').parentElement.removeChild(document.querySelector('.comunicate'));
+        }
+        return false;
+    });
+
     formSend.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -27,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //SLIDER
     let counter = 0;
     arrowRight.addEventListener('click', function () {
-        if (counter >= gallery.length-1 || counter < 0) {
+        if (counter >= gallery.length - 1 || counter < 0) {
             counter = 0;
         } else {
             counter++;
@@ -46,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     arrowLeft.addEventListener('click', function () {
         counter--;
-        if(counter < 0){
+        if (counter < 0) {
             counter = 1;
         }
 
