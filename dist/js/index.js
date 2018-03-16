@@ -32,6 +32,34 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         return false;
     });
+    let comunicateE = false;
+    email.addEventListener('change', function () {
+        if(this.value.indexOf('@') === -1){
+            const div = document.createElement('div');
+            div.innerText = "emaill missing @";
+            div.classList.add('comunicate-e');
+            comunicateE = true;
+            form.appendChild(div);
+        }
+        if(comunicateE && this.value.indexOf('@')!== -1){
+            document.querySelector('.comunicate-e').parentElement.removeChild(document.querySelector('.comunicate-e'));
+        }
+    })
+    let comunicateM = false;
+    message.addEventListener('change', function () {
+        if (this.value.length < 10 && comunicateM === false) {
+            const div = document.createElement('div');
+            div.innerText = "Message must be longer than 10 letters";
+            div.classList.add('comunicate-m');
+            comunicateM = true;
+            form.appendChild(div);
+        }
+        if (comunicateM && (this.value.length >= 10)) {
+            comunicateM = false;
+            document.querySelector('.comunicate-m').parentElement.removeChild(document.querySelector('.comunicate-m'));
+        }
+        return false;
+    });
 
     formSend.addEventListener('click', function (e) {
         e.preventDefault();
