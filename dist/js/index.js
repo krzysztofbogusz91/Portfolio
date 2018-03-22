@@ -17,48 +17,40 @@ document.addEventListener("DOMContentLoaded", function () {
     //FORM VALIDATION
 
     //check if name is longer than 3 letters
-    let comunicate = false;
+
+    const messageField = document.querySelector('.message-name');
     name.addEventListener('change', function () {
+        let comunicate = false;
         if (this.value.length < 3) {
-            const div = document.createElement('div');
-            div.innerText = "Name to short!";
-            div.classList.add('comunicate');
             comunicate = true;
-            form.appendChild(div);
+            messageField.innerText = "name is to short";
         }
         if (comunicate && (this.value.length > 3)) {
+            messageField.innerText = "";
             comunicate = false;
-            document.querySelector('.comunicate').parentElement.removeChild(document.querySelector('.comunicate'));
         }
-        return false;
+
     });
-    let comunicateE = false;
+
     email.addEventListener('change', function () {
+        let comunicate = false;
         if(this.value.indexOf('@') === -1){
-            const div = document.createElement('div');
-            div.innerText = "emaill missing @";
-            div.classList.add('comunicate-e');
-            comunicateE = true;
-            form.appendChild(div);
+
         }
-        if(comunicateE && this.value.indexOf('@')!== -1){
-            document.querySelector('.comunicate-e').parentElement.removeChild(document.querySelector('.comunicate-e'));
+        if(comunicate && this.value.indexOf('@')!== -1){
+
         }
     })
-    let comunicateM = false;
+
     message.addEventListener('change', function () {
-        if (this.value.length < 10 && comunicateM === false) {
-            const div = document.createElement('div');
-            div.innerText = "Message must be longer than 10 letters";
-            div.classList.add('comunicate-m');
-            comunicateM = true;
-            form.appendChild(div);
+        let comunicate = false;
+        if (this.value.length < 10 && comunicate === false) {
+
         }
-        if (comunicateM && (this.value.length >= 10)) {
-            comunicateM = false;
-            document.querySelector('.comunicate-m').parentElement.removeChild(document.querySelector('.comunicate-m'));
+        if (comunicate && (this.value.length >= 10)) {
+
         }
-        return false;
+
     });
 
     formSend.addEventListener('click', function (e) {

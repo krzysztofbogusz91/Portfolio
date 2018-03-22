@@ -17,20 +17,40 @@ document.addEventListener("DOMContentLoaded", function () {
     //FORM VALIDATION
 
     //check if name is longer than 3 letters
-    let comunicate = false;
+
+    const messageField = document.querySelector('.message-name');
     name.addEventListener('change', function () {
+        let comunicate = false;
         if (this.value.length < 3) {
-            const div = document.createElement('div');
-            div.innerText = "Name to short!";
-            div.classList.add('comunicate');
             comunicate = true;
-            form.appendChild(div);
+            messageField.innerText = "name is to short";
         }
         if (comunicate && (this.value.length > 3)) {
+            messageField.innerText = "";
             comunicate = false;
-            document.querySelector('.comunicate').parentElement.removeChild(document.querySelector('.comunicate'));
         }
-        return false;
+
+    });
+
+    email.addEventListener('change', function () {
+        let comunicate = false;
+        if(this.value.indexOf('@') === -1){
+
+        }
+        if(comunicate && this.value.indexOf('@')!== -1){
+
+        }
+    })
+
+    message.addEventListener('change', function () {
+        let comunicate = false;
+        if (this.value.length < 10 && comunicate === false) {
+
+        }
+        if (comunicate && (this.value.length >= 10)) {
+
+        }
+
     });
 
     formSend.addEventListener('click', function (e) {

@@ -52,27 +52,6 @@ footer{
   width: 100px;
   height: 100px;
 }
-.comunicate-e,
-.comunicate-m,
-.comunicate{
-  position: fixed;
-  background: rgba(pink, 0.5);
-  color: red;
-  width: 500px;
-  border-radius: 20px;
-  display: block;
-  top:10px;
-  right: 50%;
-  transform: translateX(50%);
-}
-
-.comunicate-e{
-  top:30px
-}
-
-.comunicate-m{
-  top:50px
-}
 
 
 // Extra small devices (portrait phones, less than 576px)
